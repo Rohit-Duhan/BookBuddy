@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/mainscreen"
+    android:orientation="vertical"
+    android:weightSum="5"
+    tools:context=".MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight=".5"
+        android:gravity="center|center_horizontal"
+        >
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="197dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Book Buddy"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textColorHighlight="#E91E63"
+            android:textColorHint="#FFFFFF"
+            android:textSize="55sp"
+            app:fontFamily="@font/dancing_script_bold" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:layout_weight="1"
+        android:gravity="center"
+         >
+        <Button
+            android:id="@+id/searchbyname"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+
+            android:padding="3.5dp"
+            android:text="Search By Name"
+            android:textColor="#ffffff"
+            android:textIsSelectable="false"
+            android:fontFamily="@font/walter_turncoat"
+            android:textSize="24sp"
+            android:textStyle="normal"
+            android:textAllCaps="false"
+    />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:alpha="0.2"
+            app:srcCompat="@drawable/ic_text_fields_black_18dp"
+            tools:ignore="VectorDrawableCompat" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:layout_weight="1"
+        android:gravity="center"
+
+        >
+        <Button
+            android:id="@+id/searchbyimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+
+            android:padding="3.2dp"
+            android:text="Search By Image"
+            android:textColor="#ffffff"
+            android:textIsSelectable="false"
+            android:textSize="24sp"
+            android:fontFamily="@font/walter_turncoat"
+            android:textStyle="normal"
+            android:textAllCaps="false"
+            />
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:alpha="0.2"
+            app:srcCompat="@drawable/ic_photo_camera_black_18dp"
+            tools:ignore="VectorDrawableCompat" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="8dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        >
+
+        <Button
+            android:id="@+id/searchbyvoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_background"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:fontFamily="@font/walter_turncoat"
+            android:text="Search By Voice"
+            android:textColor="#ffffff"
+            android:textIsSelectable="false"
+            android:textSize="24sp"
+            android:textStyle="normal"
+            android:textAllCaps="false"/>
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_weight="1"
+            android:alpha="0.2"
+            app:srcCompat="@drawable/ic_mic_black_18dp"
+            tools:ignore="VectorDrawableCompat" />
+
+
+    </LinearLayout>
+
+</LinearLayout>
